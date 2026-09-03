@@ -13,12 +13,12 @@
          
             <div class="navigation">
                 <ul id="menu">
-                    <li>Skills</li>
-                    <li>Projects</li>
-                    <li>Experience</li>
-                    <li>Education</li>
-                    <li>Contact</li>
-                    <li>Profile</li>
+                    <li id="home" class="active">Home</li>
+                    <li class="">Skills</li>
+                    <li class="">Projects</li>
+                    <li class="">Experience</li>
+                    <li class="">Education</li>
+                    <li class="">Contact</li>
                 </ul>
                 <button id="export-btn">Export</button>
             </div>
@@ -31,7 +31,30 @@
                     <li>Profile</li>
                 </ul>
             </div>
-            <p>This is the main content area.</p>
+            <div class="main">
+                <section aria-labelledby="dashboard-stats-title">
+                    <h2 id="dashboard-stats-title">Overview</h2>
+                    <div class="cards">
+                        <article id="projects-stat">
+                            <h3>Projects</h3>
+                            <p>0 Finished</p>
+                            <p>2 In Progress</p>
+                        </article>
+                        <article id="skills-stat">
+                        <h3>Skills</h3>
+                        <p>I'm too lazy to count lol</p>
+                        </article>
+                        <article id="current-focus-stat">
+                            <h3>Current focus</h3>
+                            <p>September Full stack Speedrun</p>
+                        </article>
+                        <article id="progress-stat">
+                            <h3>Progress</h3>
+                            <p>3/30</p>
+                        </article>
+                    </div>
+                </section>
+            </div>   
         </div>
     </div>
 </body>

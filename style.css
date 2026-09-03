@@ -39,6 +39,32 @@ h1{
     cursor: pointer;
 }
 
+.active{
+    position: relative;
+    color: rgb(36, 36, 36);
+    background-color: #af8c4c;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 35px;
+}
+
+
+.active::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(36, 36, 36);
+    transform: translateY(-50%) rotate(45deg);
+    z-index: 1;
+}
+
+
+.active::after{
+    right: -8px;
+}
+
 #export-btn{
     background-color: #af8c4c;
     color: white;
@@ -69,8 +95,7 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    max-height: 20px;
-    background-color: #2c2c2c;
+    height: 50px;
 }
 
 #top-menu{
@@ -78,9 +103,47 @@ h1{
     display: flex;
     margin: 0;
     padding: 0;
+    position: absolute;
+    right: 20px;
 }
 
 #top-menu li{
     margin-right: 20px;
     cursor: pointer;
+}
+
+.main{
+    padding: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    grid-template-areas:
+        "projects skills progress"
+        "focus focus focus";
+}
+
+#projects-stat{
+    grid-area: projects;
+}
+
+#skills-stat{
+    grid-area: skills;
+}
+
+#progress-stat{
+    grid-area: progress;
+}
+
+#current-focus-stat{
+    grid-area: focus;
+}
+
+.cards article{
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
