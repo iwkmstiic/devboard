@@ -4,78 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td colspan="3">
-                <h1>Dev Dashboard</h1>
-                <p>Today: 2026-09-02</p>
-            </td>
-        </tr>
-    
-        <tr>
-            <td>
-                <h2>Active Projects</h2>
-                <p>12</p>
-            </td>
-            <td>
-                <h2>Build Success</h2>
-                <p>96%</p>
-            </td>
-            <td>
-                <h2>Open Issues</h2>
-                <p>08</p>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2>Tasks</h2>
-                <ul>
-                    <li>Fix login form validation</li>
-                    <li>Update API docs</li>
-                    <li>Review PR #214</li>
-                    <li>Prepare release notes</li>
-                    <li>Monitor deployment logs</li>
+    <div class="container">
+        <div class="left">
+            <div class="title"><h1>Dev Dashboard</h1></div>
+         
+            <div class="navigation">
+                <ul id="menu">
+                    <li>Skills</li>
+                    <li>Projects</li>
+                    <li>Experience</li>
+                    <li>Education</li>
+                    <li>Contact</li>
+                    <li>Profile</li>
                 </ul>
-            </td>
-
-            <td>
-                <h2>Git Activity</h2>
-                <p><strong>feature/auth-ui</strong> - 3 commits</p>
-                <p><strong>fix/api-timeout</strong> - 2 commits</p>
-                <p><strong>chore/ci-update</strong> - 1 commit</p>
-                <p>Last push: <strong>12 mins ago</strong></p>
-            </td>
-
-            <td>
-                <h2>System Status</h2>
-                <p><strong>API:</strong> Online</p>
-                <p><strong>DB:</strong> Stable</p>
-                <p><strong>Queue:</strong> Healthy</p>
-                <p><strong>Redis:</strong> Running</p>
-                <p><strong>Workers:</strong> 4/4 active</p>
-            </td>
-        </tr>
-
-        <tr>
-            <td>
-                <h2>Recent Commits</h2>
-                <p><strong>amine</strong> - feat: add analytics widgets</p>
-                <p><strong>nora</strong> - fix: resolve mobile nav bug</p>
-                <p><strong>sam</strong> - refactor: clean deployment script</p>
-                <p><strong>zoe</strong> - docs: update onboarding guide</p>
-            </td>
-
-            <td>
-                <h2>Deploy</h2>
-                <p><strong>Production:</strong> 2.4.8</p>
-                <p><strong>Staging:</strong> 2.5.0</p>
-                <p><strong>Last deploy:</strong> 1 hour ago</p>
-                <p><strong>Status:</strong> OK</p>
-            </td>
-        </tr>
-    </table>
+                <button id="export-btn">Export</button>
+            </div>
+        </div>
+        <div class="right">
+            <div class="top-bar">
+                <ul id="top-menu">
+                    <li>Settings</li>
+                    <li>Notifications</li>
+                    <li>Profile</li>
+                </ul>
+            </div>
+            <p>This is the main content area.</p>
+        </div>
+    </div>
 </body>
 </html>
