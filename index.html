@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -52,10 +53,34 @@
                             <h3>Progress</h3>
                             <p>3/30</p>
                         </article>
+                        <article id="todo-stat">
+                            <h3>To-do</h3>
+                            <ul id="todo-list">
+                                <li>JavaScript syntax (let/const, functions, arrays, objects, loops)</li>
+                                <li>map, filter, reduce</li>
+                                <li>DOM selection and manipulation</li>
+                                <li>Event listeners</li>
+                                <li>Fetch API</li>
+                                <li>async/await</li>
+                                <li>JSON</li>
+                                <li>try/catch</li>
+                                <li>Implement on Devboad</li>
+                            </ul>
+                            <input type="text" id="todo-input" placeholder="Add a new todo...">
+                            <button onclick="addTodo()" id="add-todo-btn">Add Todo</button>
+                        </article>
+                        <article id="done-stat">
+                            <h3>Done</h3>
+                            <ul id="done-list">
+                                <li>Html</li>
+                                <li>CSS basics</li>
+                            </ul>
+                        </article>
                     </div>
                 </section>
             </div>   
         </div>
     </div>
+
 </body>
 </html>

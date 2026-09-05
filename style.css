@@ -1,6 +1,7 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
 }
 
 .container{
@@ -122,7 +123,8 @@ h1{
     gap: 20px;
     grid-template-areas:
         "projects skills progress"
-        "focus focus focus";
+        "focus focus focus"
+        "todo todo done";
 }
 
 #projects-stat{
@@ -141,9 +143,81 @@ h1{
     grid-area: focus;
 }
 
+#todo-stat{
+    grid-area: todo;
+}
+
+#done-stat{
+    grid-area: done;
+}
+
+
+
+.cards ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-width: 95%;
+}
+
+
+#todo-list li{
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: solid 2px #1c1c1c;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+#todo-list li:hover {
+    background-color: #1d1d1d;
+}
+
+
+#done-list li{
+     margin-bottom: 5px;
+    cursor: pointer;
+    border: solid 2px #1c1c1c;
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: line-through;
+}
+
 .cards article{
     background-color: #2c2c2c;
     padding: 20px;
     border-radius: 5px;
     margin-bottom: 20px;
 }
+
+#todo-input{
+    width: 40%;
+    padding: 08px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    color: white;
+}
+
+#add-todo-btn{
+    padding: 8px 12px;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #af8c4c;
+    color: white;
+    cursor: pointer;
+}
+
+#add-todo-btn:hover{
+    background-color: #866c3a;
+    transition: all 0.3s ease-in-out;
+}
+
+#add-todo-btn:active{
+    background-color: #af8c4c;
+    transition: all 0.3s ease-in-out;
+}
+
